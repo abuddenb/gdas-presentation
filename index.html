@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>GDAS Presentation</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            .reveal section img { background:none; border:none; box-shadow:none;}
+            .reveal .slides section .reallife {color: #42affa; font-size: medium; vertical-align: middle;}
+        </style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+
+            <div class="slides">
+                <section>
+                    <h2>GDAS</h2>
+                    <p>The GCIS Data Acquisition System</p>
+                    <p>Another adventure in software engineering @ <a href="http://www.cicsnc.org/people/andrew-buddenberg/">CICS-NC</a></p>
+                    <p>By <a href="https://github.com/abuddenb">github.com/abuddenb</a></p>
+
+
+                    <!--<div style="font-size: 50%; padding-top: 10px">-->
+                    <!--<p>Paula Ann Hennon, PhD @ <a href="http://www.cicsnc.org/people/paula-hennon/">CICS-NC</a></p>-->
+                    <!--<p>Lou Vasquez @ <a href="http://www.cicsnc.org/people/lou-vasquez/">CICS-NC</a></p>-->
+                    <!--</div>-->
+
+                    <footer>
+                        <img src="img/noaa_white_200.png" height="96px" width="96px">
+                        <img src="img/brick4x1.jpg" height="20%" width="20%" style="position: relative; top: -7px; padding: 20px">
+                        <img src="img/cicsnc-logo.png" height="96px" width="96px">
+                    </footer>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>What is GDAS?</h3>
+                        <p>A web application to facilitate the rapid entry and processing of traceable, sound global change data, information, and products.</p>
+                        <img src="img/gdas_nca3Home.png" height="75%" width="75%">
+                    </section>
+
+                    <section>
+                        <h3>What is GDAS?</h3>
+                        <p>A place to collaborate on metadata in <a href="http://meteor.com">real time</a>.</p>
+                        <img src="img/gdas_graphicsList.png">
+                    </section>
+
+                    <section>
+                        <h3>What is GDAS?</h3>
+                        <p>The answer to a question:</p>
+                        <h4 class="fragment">What if we made metadata fast and easy?</h4>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Why did we make GDAS?</h3>
+                        <p>The Assessment has a lot of moving parts.</p>
+                        <img src="img/nca3Parts.png" height="50%" width="50%">
+                    </section>
+
+                    <section>
+                        <h3>Why did we make GDAS?</h3>
+                        <small>A single place to coordinate our activities that's always up-to-date.</small>
+                        <p>vs.</p>
+                        <ul>
+                            <li>Emailing works-in-progress among geographically disparate groups.
+                                <span class="reallife">("Wait, is this the latest version!?")</span>
+                            </li>
+                            <li>A constellation of Drupal forms, ad-hoc spreadsheets, a Google Slides presentation, and the honor system to manage metadata.
+                                <span class="reallife">("Is that on the resources site? Check the status in the spreadsheet. No, there was a problem :-/ ")</span>
+                            </li>
+                            <li>Sending out an Excel sheet as a metadata survey.
+                                <small class="reallife">(This didn't last long; we got exactly one response.)</small>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h3>Why did we make GDAS?</h3>
+                        <p>Metadata shouldn't be this hard!</p>
+
+                        <p class="fragment">Many moving parts create friction.</p>
+                        <p class="fragment">Users shouldn't have to worry about breaking things.</p>
+                        <p class="fragment">It should be easy to add and change metadata - "Just type."</p>
+                    </section>
+
+                    <!--<section>-->
+                        <!--<h3>Metadata</h3>-->
+                        <!--<small>GDAS also coming along nicely</small>-->
+                        <!--<img src="img/gdas_autocomplete.png">-->
+                    <!--</section>-->
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Underlying Technology</h3>
+                    </section>
+                </section>
+            </div>
+
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
